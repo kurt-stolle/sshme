@@ -34,7 +34,7 @@ def find_window(name: str) -> str:
     return None
 
 
-def exec_select_window(id: str) -> None:
+def select_window(id: str) -> None:
     execvp("tmux", args=[
         "tmux", "select-window", "-t", id
     ])
